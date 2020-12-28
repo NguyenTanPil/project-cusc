@@ -123,6 +123,7 @@
 		margin-top: 208px;
 		border-radius: 50%;
 		left: initial ;
+		right: 32px;
 	}
 
 	.step:nth-child(2):before {
@@ -184,6 +185,28 @@
 	z-index: 1001;
 	width: 100%;
 }
+
+
+.navbar-nav .nav-item .nav-link{
+	border-bottom: 4px solid transparent;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+	border-bottom-color: rgb(41, 171, 226);
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+	border-right: 4px solid transparent;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+	border-right-color: rgb(41, 171, 226);
+}
+.navbar-nav .nav-item .dropdown-menu .dropdown-item span:hover {
+	color: rgb(41, 171, 226) !important;
+}
+
+
 /*start slider */
 
 .my-slider {
@@ -198,7 +221,7 @@
 	position: relative;
 }
 .theme-back {
-	background-color: rgb(111, 112, 125);
+	background-color: rgb(53, 53, 74);
 	opacity: 0.6;
 	width: 100%;
 	height: 100%;
