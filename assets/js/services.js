@@ -1,7 +1,7 @@
 Vue.component('new-product', {
 	props: ['obj'],
 	template: `
-    <div class="card my-card-product mx-sm-auto" >
+    <div class="card my-card-product mx-sm-auto" data-aos="zoom-in-up" data-aos-duration="1000">
       <a href="#"><img class="card-img-top my-img-product" :src="obj.img" alt="Card image cap"></a>
       <div class="card-body">
         <h6 class="card-title"><a href="#">{{obj.title}}</a></h6>

@@ -1,7 +1,7 @@
 Vue.component('new-blog', {
 	props: ['obj'],
 	template: `
-    <div class="row article-1 pb-5 mb-5">
+    <div class="row article-1 pb-5 mb-5" data-aos="fade-up" data-aos-duration="1000">
       <div class="col-12 position-relative px-0 py-0 not-over">
         <a href="#">
           <i class="fa fa-search position-absolute article-1-search d-none" aria-hidden="true"></i>

@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
   <!-- Lien ket font size -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Lien ket aos -->
+	<link rel="stylesheet" href="vendor/aos/aos.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style-blog.css">
 </head>
@@ -148,11 +150,11 @@
 					<div class="container" style="height: 100%;">
 						<div class="row d-flex" style="height: 100%;">
 							<div class="col-12 align-self-center py-5" style="z-index: 1001;">
-								<h2 class="font-weight-bold text-white">BLOG</h2>
+								<h2 class="font-weight-bold text-white" data-aos="fade-down" data-aos-duration="1000">BLOG</h2>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-12 position-absolute" style="z-index: 1001; bottom: 10px; width: 50%;">
+							<div class="col-12 position-absolute" style="z-index: 1001; bottom: 10px; width: 50%;" data-aos="fade-up" data-aos-duration="1000">
 								<a href="index.html" style="text-decoration: none;">Home</a>
 								<span style="color: rgb(41, 171, 226);"> <b>></b> Blog</span>
 							</div>
@@ -199,12 +201,12 @@
 				</div>
 			</div>
 			<div class="col-4 pl-5">
-				<div class="row py-3">
+				<div class="row py-3" data-aos="fade-left" data-aos-duration="1000">
 					<div class="col-12">
 						<h5>Our service</h5>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" data-aos="fade-left" data-aos-duration="1000">
 					<div class="col-12">
 						 <ul class="list-group">
 						  <a href="#" class="list-group-item our-ser">Data becup & recovery</a>
@@ -215,12 +217,12 @@
 						</ul>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" data-aos="fade-left" data-aos-duration="1000">
 					<div class="col-12">
 						<div class="border-break my-5"></div>
 					</div>
 				</div> 
-				<div class="row">
+				<div class="row" data-aos="fade-left" data-aos-duration="1000">
 					<div class="col-12">
 						<h5 class="font-weight-bold">Categories</h5>
 						<ul class="list-group list-group-flush">
@@ -232,12 +234,12 @@
 						</ul>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" data-aos="fade-left" data-aos-duration="1000">
 					<div class="col-12">
 						<div class="border-break my-5"></div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" data-aos="fade-left" data-aos-duration="1000">
 					<div class="col-12 p-4 contact-with-us">
 						<h5 class="text-uppercase pt-3">FREE CONSULTATION</h5>
 						<p class="text-muted">Get answers and advice from people you want it from.</p>
@@ -330,5 +332,10 @@
 <script src="vendor/vueJS/vue.js"></script>
 <!-- Lien ket my js -->
 <script src="assets/js/blog.js"></script>
+<!-- Lien ket aos -->
+<script src="vendor/aos/aos.js"></script>
+ <script>
+    AOS.init();
+ </script>
 </body>
 </html>

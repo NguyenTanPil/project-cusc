@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
   <!-- Lien ket font size -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Lien ket aos -->
+	<link rel="stylesheet" href="vendor/aos/aos.css">
+	<!-- Map -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style-services.css">
 </head>
@@ -171,7 +174,7 @@
 	<div class="services pb-5">
 		<div class="container">
 			<!-- Nav tabs -->
-			<ul class="nav nav-tabs justify-content-center mb-5" id="myTab" role="tablist">
+			<ul class="nav nav-tabs justify-content-center mb-5" id="myTab" role="tablist" data-aos="zoom-in" data-aos-duration="1000">
 			  <li class="nav-item">
 			    <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
 			  </li>
@@ -236,8 +239,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 mb-3">
-					<h2 class="font-weight-bold text-center">CAN'T FIND WHAT YOU ARE LOOKING FOR?</h2>
-					<p class="text-muted text-center pt-2">
+					<h2 class="font-weight-bold text-center" data-aos="fade-left" data-aos-duration="1000">CAN'T FIND WHAT YOU ARE LOOKING FOR?</h2>
+					<p class="text-muted text-center pt-2" data-aos="fade-right" data-aos-duration="1000">
 						Tell us what you're looking for and we'll make a solution for it. Contact us!
 					</p>
 				</div>
@@ -246,7 +249,7 @@
 				<div class="col-2"></div>
 
 				<div class="col-8">
-					<form>
+					<form data-aos="fade-down" data-aos-duration="1000">
 					  <div class="form-group">
 					  	<input type="text" class="form-control mb-3" placeholder="Name">
 					    <input type="email" class="form-control mb-3" placeholder="Email" aria-describedby="emailHelp">
@@ -344,5 +347,10 @@
 <script src="vendor/vueJS/vue.js"></script>
 <!-- Lien ket my js -->
 <script src="assets/js/services.js"></script>
+<!-- Lien ket aos -->
+<script src="vendor/aos/aos.js"></script>
+ <script>
+    AOS.init();
+ </script>
 </body>
 </html>
