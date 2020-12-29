@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
-	<title>Services.com</title>
+	<title>Contact.com</title>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Laptop, Laptop gia re, Laptop thoi trang, Laptop chinh hang">
@@ -15,11 +15,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- Lien ket aos -->
 	<link rel="stylesheet" href="vendor/aos/aos.css">
-	<!-- Map -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style-services.css">
+  <link rel="stylesheet" href="assets/css/style-contact-us.css">
 </head>
-<body style="width: 100%;">
+<body>
 	<!-- start header -->
 	<div class="header">
 		<div class="top-header bottom-separator	bg-transparent d-none d-sm-block">
@@ -108,7 +107,7 @@
 						        <a class="nav-link" href="shop.html"><span class="text-dark">Shop</span></a>
 						      </li>
 						      <li class="nav-item nav-link">
-						        <a class="nav-link" href="services.html"><span class="text-dark" style="color: rgb(41, 171, 226) !important;">Services</span></a>
+						        <a class="nav-link" href="services.html"><span class="text-dark">Services</span></a>
 						      </li>
 						      <li class="nav-item nav-link">
 						        <a class="nav-link" href="#"><span class="text-dark">Projects</span></a>
@@ -116,8 +115,8 @@
 						      <li class="nav-item nav-link">
 						        <a class="nav-link" href="blog.html"><span class="text-dark">Blog</span></a>
 						      </li>
-						      <li class="nav-item nav-link">
-						        <a class="nav-link" href="contact-us.html"><span class="text-dark">Contact us</span></a>
+						     <li class="nav-item nav-link">
+						        <a class="nav-link" href="contact-us.html"><span class="text-dark current">Contact us</span></a>
 						      </li>
 						      <li class="nav-item nav-link">
 						      	<a href="#" class="nav-link">
@@ -140,17 +139,17 @@
 			<!-- end header container -->
 
 			<!-- start slider -->
-				<div class="bg-services position-relative mb-5">
+				<div class="bg-blog position-relative">
 					<div class="container" style="height: 100%;">
 						<div class="row d-flex" style="height: 100%;">
 							<div class="col-12 align-self-center py-5" style="z-index: 1001;">
-								<h2 class="font-weight-bold text-white">SERVICES</h2>
+								<h2 class="font-weight-bold text-white" data-aos="fade-down" data-aos-duration="1000">CONTACT</h2>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-12 position-absolute" style="z-index: 1001; bottom: 10px; width: 50%;">
+							<div class="col-12 position-absolute" style="z-index: 1001; bottom: 10px; width: 50%;" data-aos="fade-up" data-aos-duration="1000">
 								<a href="index.html" style="text-decoration: none;">Home</a>
-								<span style="color: rgb(41, 171, 226);"> <b>></b> Services</span>
+								<span style="color: rgb(41, 171, 226);"> <b>></b> Contact</span>
 							</div>
 						</div>
 					</div>
@@ -163,78 +162,65 @@
 	<!-- end header -->
 	<!-- start container -->
 
-	<!-- start services -->
-	<div class="services pb-5">
-		<div class="container">
-			<!-- Nav tabs -->
-			<ul class="nav nav-tabs justify-content-center mb-5" id="myTab" role="tablist" data-aos="zoom-in" data-aos-duration="1000">
-			  <li class="nav-item">
-			    <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" id="mac-tab" data-toggle="tab" href="#mac" role="tab" aria-controls="mac" aria-selected="false">Macbook</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" id="asus-tab" data-toggle="tab" href="#asus" role="tab" aria-controls="asus" aria-selected="false">Asus</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" id="dell-tab" data-toggle="tab" href="#dell" role="tab" aria-controls="dell" aria-selected="false">Dell</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" id="acer-tab" data-toggle="tab" href="#acer" role="tab" aria-controls="acer" aria-selected="false">Acer</a>
-			  </li>
-			</ul>
-			<!-- Tab panes -->
-			<div class="tab-content">
-			  <div class="tab-pane active" id="all" role="tabpanel" aria-labelledby="all-tab">
-			  	<div class="app row">
-			  		<div class="col-12 col-md-6 col-lg-4 mb-3" v-for="i in listNew1">
-							<new-product v-bind:obj="i" v-bind:key="i.id"></new-product>
-						</div>
-					</div>
-			  </div>
-			  <div class="tab-pane" id="mac" role="tabpanel" aria-labelledby="mac-tab">
-			  	<div class="app2 row">
-			  		<div class="col-12 col-md-6 col-lg-4 mb-3" v-for="i in listNew2">
-							<new-product v-bind:obj="i" v-bind:key="i.id"></new-product>
-						</div>
-					</div>
-			  </div>
-			  <div class="tab-pane" id="asus" role="tabpanel" aria-labelledby="asus-tab">
-			  	<div class="app3 row">
-			  		<div class="col-12 col-md-6 col-lg-4 mb-3" v-for="i in listNew3">
-							<new-product v-bind:obj="i" v-bind:key="i.id"></new-product>
-						</div>
-					</div>
-			  </div>
-			  <div class="tab-pane" id="dell" role="tabpanel" aria-labelledby="dell-tab">
-			  	<div class="app4 row">
-			  		<div class="col-12 col-md-6 col-lg-4 mb-3" v-for="i in listNew4">
-							<new-product v-bind:obj="i" v-bind:key="i.id"></new-product>
-						</div>
-					</div>
-			  </div>
-			  <div class="tab-pane" id="acer" role="tabpanel" aria-labelledby="acer-tab">
-			  	<div class="app5 row">
-			  		<div class="col-12 col-md-6 col-lg-4 mb-3" v-for="i in listNew5">
-							<new-product v-bind:obj="i" v-bind:key="i.id"></new-product>
-						</div>
-					</div>
-			  </div>
+	<!-- start map -->
+	<div class="position-relative">
+		<div class="map-address" data-aos="zoom-in-down" data-aos-duration="1000">
+			<div class="mapouter" style="width: 100%;">
+				<div class="gmap_canvas">
+					<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=TP%20HO%20CHI%20MINH&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					<a href="https://fmovies2.org"></a>
+				</div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
 			</div>
-
 		</div>
-	</div>					
-	<!-- end services -->
-
-	<!-- start contact us -->
+	<!-- end map -->
+		<div class="container-fluid move-info">
+		<div class="row">
+			<div class="col-lg-3 col-md-0"></div>
+			<div class="col-lg-6 col-md-12">
+				<div class="row my-con-us pt-5 px-2">
+					<div class="col-md-6 col-12 d-flex flex-column mb-3">
+						<h5>CONTACT US</h5>
+						<span>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							Sidestate NSW 4132, Australia
+						</span>
+						<span>
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							(555) 555-0312
+						</span>
+						<span>
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							info@profix.com
+						</span>
+						
+					</div>
+					<div class="col-md-6 col-12 mb-3">
+						<h5>OPENING HOURS</h5>
+						<div class="d-flex justify-content-between">
+							<span>Monday-Friday</span>
+							<span>10:00 - 18:00</span>
+						</div>
+						<div class="d-flex justify-content-between">
+							<span>Saturday, Sunday</span>
+							<span>Closed</span>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-0"></div>
+		</div>
+		</div>
+	</div>
+	<!-- end container -->
+	<!-- form contact -->
 	<div class="contact-us  py-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 mb-3">
-					<h2 class="font-weight-bold text-center" data-aos="fade-left" data-aos-duration="1000">CAN'T FIND WHAT YOU ARE LOOKING FOR?</h2>
+					<h2 class="font-weight-bold text-center" data-aos="fade-left" data-aos-duration="1000">REQUEST A CALLBACK</h2>
 					<p class="text-muted text-center pt-2" data-aos="fade-right" data-aos-duration="1000">
-						Tell us what you're looking for and we'll make a solution for it. Contact us!
+						if your need personal assistance, fill the form bellow we will reply back to your asap!
 					</p>
 				</div>
 			</div>
@@ -249,11 +235,10 @@
 					    <input type="text" class="form-control mb-3" placeholder="Subject">
 					  </div>
 					  <div class="form-group mb-5">
-					    <textarea class="form-control" rows="4" placeholder="Ask your question here"></textarea>
+					    <textarea class="form-control" rows="4" placeholder="Message"></textarea>
 					  </div>
 					  <div class="d-flex justify-content-center">
-					  	<button type="submit" class="btn btn-sent text-uppercase px-5">Submit</button>
-					  	<div class="btn-text text-primary p-2"><span class="font-weight-bold">or CALL</span> <span class="text-dark">(+84) 0233 555 312</span></div>
+					  	<button type="submit" class="btn btn-sent text-uppercase px-5">send message</button>
 					  </div>	
 					</form>
 				</div> 
@@ -262,9 +247,7 @@
 			</div>		
 		</div>
 	</div>
-	<!-- end contact us -->
-	<!-- end container -->
-
+	<!-- form contact -->
 	<!--start footer -->
 	<div class="footer">
 		<div class="container text-left pt-5">
@@ -339,7 +322,7 @@
 <!-- Lien ket vue js -->
 <script src="vendor/vueJS/vue.js"></script>
 <!-- Lien ket my js -->
-<script src="assets/js/services.js"></script>
+<script src="assets/js/blog.js"></script>
 <!-- Lien ket aos -->
 <script src="vendor/aos/aos.js"></script>
  <script>

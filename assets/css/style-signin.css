@@ -13,6 +13,9 @@ a {
 	.my-right-top-header {
 		justify-content: center;
 	}
+	.more-info {
+		position: relative;
+	}
 }
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -21,6 +24,10 @@ a {
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+	.move-info {
+		position: absolute;
+		bottom: 0px;
+	}
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
@@ -82,123 +89,46 @@ a {
 /*end slider */
 
 
-/*start shop*/
-.show-pro {
-	border: 0px !important;
-	cursor: pointer;
-}
-.show-pro > option {
-	cursor: pointer;
-	color: grey;
-}
-.show-pro:hover {
-	color: rgb(41, 171, 226);
-}
-.show-pro:focus {
-	border: 0px !important;
-	outline: 0px !important;
-}
-.my-card-product {
-	border: 0px !important;
-}
-.my-card-product:hover {
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.name-price .name {
-	color: grey;
-}
-.name-price .name:hover {
-	color: rgb(41, 171, 226);
-}
-.name-price .price-by-dolar {
-	font-size: 150%;
-	font-weight: bold;
-}
-.type-pro {
-	cursor: pointer;
-}
-.type-pro:hover {
-	color: rgb(41, 171, 226) !important;
-}
+/*start container*/
 .btn-view-buy a {
 	border-radius: 0px !important;
 	font-size: 90%;
 }
-.btn-view-buy .first:hover {
-	background-color: transparent;
-	color: black;
-	border-color: black;
-}
-.btn-view-buy .second {
+.second {
 	background-color: rgb(41, 171, 226);
 	color: white;
 }
-.btn-view-buy .second:hover {
+.second:hover {
 	background-color: rgb(53, 53, 74);
 }
-/*end shop*/
-
-/*star right bar*/
-.list-group .our-ser {
-	color: grey;
-	width: 100% !important;
-	height: 100% !important;
-	padding: .75rem 1.5rem !important;
+.no-border {
+	border-radius: 0px !important;
 }
-.list-group .our-ser:hover {
+.facebook {
+	background-color: #3B5999;
 	color: white;
-	background-color: rgb(41, 171, 226); 
 }
-.border-break {
-	height: 1px;
-	background-color: rgb(41, 171, 226);
-	position: relative;
-}
-.border-break::before {
-	content: '';
-	width: 7px;
-	height: 7px;
-	position: absolute;
-	background-color: rgb(41, 171, 226);
-	top: -3px;
-	border-radius: 50%;
-}
-.border-break::after {
-	content: '';
-	width: 7px;
-	height: 7px;
-	position: absolute;
-	background-color: rgb(41, 171, 226);
-	right: 0px;
-	top: -3px;
-	border-radius: 50%;
-}
-.my-cate {
-	padding-left: 0px !important;
-	color: rgb(41, 171, 226);
-}
-.my-cate:hover {
-	color: black !important;
-}
-.btn-contact {
-	background-color: rgb(41, 171, 226);
+.facebook:hover {
 	color: white;
-	/*width: 30%;*/
-	border-radius: inherit;
-	font-size: 90%;
+	background-color: rgb(38, 57, 98);
 }
-.btn-contact:hover {
-	color: #fff;
-	background-color: rgb(53, 53, 74);
+.twitter{
+	background-color: rgb(69, 176, 228);
+	color: white;
 }
-.contact-with-us {
-	background-color: rgb(247, 247, 247);
+.twitter:hover {
+	background-color: rgb(28, 139, 193);
+	color: white;
 }
-.manufacturer >.list-group-item {
-	border: 0px !important;
-	font-size: 90% !important;
-} 
-/*end right bar*/
+.google {
+	background-color: rgb(222, 76, 51);
+	color: white;
+}
+.google:hover {
+	background-color: rgb(169, 48, 27);
+	color: white;
+}
+/*end container*/
 
 /*start footer*/
 .footer {

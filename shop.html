@@ -17,8 +17,9 @@
 	<link rel="stylesheet" href="vendor/aos/aos.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style-shop.css">
+  <link rel="stylesheet" href="assets/css/style-shop-1.css">
 </head>
-<body>
+<body style="width: 100%;">
 	<!-- start header -->
 	<div class="header">
 		<div class="top-header bottom-separator	bg-transparent d-none d-sm-block">
@@ -98,13 +99,13 @@
 						          <span class="text-dark">Pages</span>
 						        </a>
 						        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="z-index: 1010;">
-						          <a class="dropdown-item" href="#"><span class="text-secondary">Action</span></a>
-						          <a class="dropdown-item" href="#"><span class="text-secondary">Action</span></a>
-						          <a class="dropdown-item" href="#"><span class="text-secondary">Action</span></a>
+						          <a class="dropdown-item" href="signin.html"><span class="text-secondary">Sign in</span></a>
+						          <a class="dropdown-item" href="signup.html"><span class="text-secondary">Sign up</span></a>
+						          <a class="dropdown-item" href="profile.html"><span class="text-secondary">Profile</span></a>
 						        </div>
 						      </li>
 						      <li class="nav-item nav-link">
-						        <a class="nav-link" href="#"><span class="text-dark">Shop</span></a>
+						        <a class="nav-link" href="shop.html"><span class="text-dark current">Shop</span></a>
 						      </li>
 						      <li class="nav-item nav-link">
 						        <a class="nav-link" href="services.html"><span class="text-dark">Services</span></a>
@@ -113,17 +114,10 @@
 						        <a class="nav-link" href="#"><span class="text-dark">Projects</span></a>
 						      </li>
 						      <li class="nav-item nav-link">
-						        <a class="nav-link" href="#"><span class="text-dark current">Blog</span></a>
+						        <a class="nav-link" href="blog.html"><span class="text-dark">Blog</span></a>
 						      </li>
-						      <li class="nav-item nav-link dropdown">
-						        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						          <span class="text-dark">Contact us</span>
-						        </a>
-						        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="z-index: 1010;">
-						          <a class="dropdown-item" href="#"><span class="text-secondary">Action</span></a>
-						          <a class="dropdown-item" href="#"><span class="text-secondary">Action</span></a>
-						          <a class="dropdown-item" href="#"><span class="text-secondary">Action</span></a>
-						        </div>
+						      <li class="nav-item nav-link">
+						        <a class="nav-link" href="contact-us.html"><span class="text-dark">Contact us</span></a>
 						      </li>
 						      <li class="nav-item nav-link">
 						      	<a href="#" class="nav-link">
@@ -230,17 +224,17 @@
 			<div class="col-4 pl-5">
 				<div class="row py-3" data-aos="fade-left" data-aos-duration="1000">
 					<div class="col-12">
-						<h5>Our service</h5>
+						<h5>Product Category</h5>
 					</div>
 				</div>
 				<div class="row" data-aos="fade-left" data-aos-duration="1000">
 					<div class="col-12">
 						 <ul class="list-group">
-						  <a href="#" class="list-group-item our-ser">Data becup & recovery</a>
-						  <a href="#" class="list-group-item our-ser">Repair smartphone</a>
-						  <a href="#" class="list-group-item our-ser">Laptop & Mac upgrade</a>
-						  <a href="#" class="list-group-item our-ser">Tablet repair</a>
-						  <a href="#" class="list-group-item our-ser">Network solution</a>
+						  <a href="#" class="list-group-item our-ser">Accessories</a>
+						  <a href="#" class="list-group-item our-ser">Components</a>
+						  <a href="#" class="list-group-item our-ser">Storage</a>
+						  <a href="#" class="list-group-item our-ser">Tablet</a>
+						  <a href="#" class="list-group-item our-ser">Mouse</a>
 						</ul>
 					</div>
 				</div>
@@ -249,18 +243,97 @@
 						<div class="border-break my-5"></div>
 					</div>
 				</div> 
+
 				<div class="row" data-aos="fade-left" data-aos-duration="1000">
 					<div class="col-12">
-						<h5 class="font-weight-bold">Categories</h5>
-						<ul class="list-group list-group-flush">
-						  <li class="list-group-item border-0 pl-0 pb-0"><a href="#" class="text-uppercase my-cate"><i class="fa fa-chevron-right pr-2" aria-hidden="true"></i><span>COMPUTER</span></a></li>
-						  <li class="list-group-item border-0 pl-0 pb-0"><a href="#" class="text-uppercase my-cate"><i class="fa fa-chevron-right pr-2" aria-hidden="true"></i>MICRO CHIP REPAIR</a></li>
-						  <li class="list-group-item border-0 pl-0 pb-0"><a href="#" class="text-uppercase my-cate"><i class="fa fa-chevron-right pr-2" aria-hidden="true"></i>TECHNOLOGY</a></li>
-						  <li class="list-group-item border-0 pl-0 pb-0"><a href="#" class="text-uppercase my-cate"><i class="fa fa-chevron-right pr-2" aria-hidden="true"></i>IPHONE</a></li>
-						  <li class="list-group-item border-0 pl-0 pb-0"><a href="#" class="text-uppercase my-cate"><i class="fa fa-chevron-right pr-2" aria-hidden="true"></i>REPLACE</a></li>
+						<div class="row pb-3">
+							<div class="col-12">
+								<h4 class="text-dark">Filter products</h4>
+								<span class="text-muted">Price</span>
+							</div>
+						</div>
+						<div class="row">
+					    <div class="col-sm-12 m-auto">
+					      <div id="slider-range"></div>
+					    </div>
+					  </div>
+					  <div class="row slider-labels d-flex justify-content-around">
+					    <div class="col-xs-6 caption">
+					      <strong>Min:</strong> <span id="slider-range-value1"></span>
+					    </div>
+					    <div class="col-xs-6 text-right caption">
+					      <strong>Max:</strong> <span id="slider-range-value2"></span>
+					    </div>
+					  </div>
+					  <div class="row">
+					    <div class="col-sm-12">
+					      <form>
+					        <input type="hidden" name="min-value" value="">
+					        <input type="hidden" name="max-value" value="">
+					      </form>
+					    </div>
+					  </div> 
+					 </div>
+				</div>
+				<div class="row mt-5">
+					<div class="col-12">
+						<h6 class="text-muted">Manufacturer</h6>
+						<ul class="list-group list-group-flush manufacturer">
+						  <li class="list-group-item py-1">MACBOOK <span class="text-muted">(15)</span></li>
+						  <li class="list-group-item py-1">ASUS <span class="text-muted">(7)</span></li>
+						  <li class="list-group-item py-1">DELL <span class="text-muted">(5)</span></li>
+						  <li class="list-group-item py-1">ACER <span class="text-muted">(15)</span></li>
 						</ul>
 					</div>
 				</div>
+				<div class="row mt-5">
+					<div class="col-12">
+						<h5 class="font-weight-bold mb-4">Top Rated Products</h5>
+						<div class="row pb-3">
+							<div class="col-4">
+								<a href="#">
+									<img src="assets/images/shop-1.jpg" class="img-fluid" alt="Responsive image"> 
+								</a> 
+							</div>
+							<div class="col-8">
+								<div class="name-price d-flex flex-column">
+							    <h6 class="card-title mb-0 py-2"><a class="name text-dark" href="#">GAMERS MOUSE</a></h6>
+								  <p class="card-text text-muted type-pro mb-0">mouse</p>
+								  <span class="price-by-dolar" style="font-size: 120%;">$45.05</span>
+								</div>
+							</div>
+						</div>
+						<div class="row pb-3">
+							<div class="col-4">
+								<a href="#">
+									<img src="assets/images/shop-2.jpg" class="img-fluid" alt="Responsive image"> 
+								</a> 
+							</div>
+							<div class="col-8">
+								<div class="name-price d-flex flex-column">
+							    <h6 class="card-title mb-0 py-2"><a class="name text-dark" href="#">USB 3.0 HUB</a></h6>
+								  <p class="card-text text-muted type-pro mb-0">accessories</p>
+								  <span class="price-by-dolar" style="font-size: 120%;">$67.05</span>
+								</div>
+							</div>
+						</div>
+						<div class="row pb-3">
+							<div class="col-4">
+								<a href="#">
+									<img src="assets/images/shop-3.jpg" class="img-fluid" alt="Responsive image"> 
+								</a> 
+							</div>
+							<div class="col-8">
+								<div class="name-price d-flex flex-column">
+							    <h6 class="card-title mb-0 py-2"><a class="name text-dark" href="#">LAPTOP POWER ADAPTER</a></h6>
+								  <p class="card-text text-muted type-pro mb-0">accessories</p>
+								  <span class="price-by-dolar" style="font-size: 120%;">$55.05</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div class="row" data-aos="fade-left" data-aos-duration="1000">
 					<div class="col-12">
 						<div class="border-break my-5"></div>
@@ -277,6 +350,35 @@
 						</div>
 					</div>
 				</div>
+				<div class="row" data-aos="fade-left" data-aos-duration="1000">
+					<div class="col-12">
+						<div class="border-break my-5"></div>
+					</div>
+				</div> 
+				<div class="row">
+					<div class="col-12">
+						<div class="card my-card-product mx-sm-auto px-2" data-aos="zoom-in-up" data-aos-duration="1000">
+							<a href="#"><img class="card-img-top my-img-product" src="assets/images/shop-5.jpg" alt="Card image cap"></a>
+							<div class="card-body">
+							  <div class="name-price d-flex justify-content-between">
+							    <h6 class="card-title mb-0 py-2"><a class="name" href="#">128GB SSD M.2</a></h6>
+							    <span class="price-by-dolar">$45.05</span>
+							  </div>
+							  <p class="card-text text-muted type-pro">storage</p>
+							  <div class="view-buy d-flex justify-content-end">
+							    <div class="btn-view-buy mr-2">
+							      <a href="#" class="first btn btn-outline-info" role="button" aria-pressed="true">VIEW</a>
+							    </div>
+							    <div class="btn-view-buy">
+							      <a href="#" class="second btn btn-outline-info" role="button" aria-pressed="true">
+							      	<i class="fa fa-shopping-cart pr-2" aria-hidden="true"></i>BUY
+							      </a>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>	 	
 			</div>
 		</div>
 	</div>						
@@ -301,10 +403,10 @@
 							<div class="footer-title pb-3 pt-2 text-white">ADDITIONAL LINKS</div>
 							<ul class="list-link">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="#">FAQ</a></li>
+								<li><a href="shop.html">Shop</a></li>
 								<li><a href="services.html">Services</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contact us</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact-us.html">Contact us</a></li>
 							</ul>
 						</div>
 						<div class="col-sm-4">
@@ -359,6 +461,7 @@
 <script src="vendor/vueJS/vue.js"></script>
 <!-- Lien ket my js -->
 <script src="assets/js/shop.js"></script>
+<script src="assets/js/shop-1.js"></script>
 <!-- Lien ket aos -->
 <script src="vendor/aos/aos.js"></script>
  <script>
