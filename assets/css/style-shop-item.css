@@ -1,4 +1,4 @@
-/*<!-- start slider -->*/
+ /*<!-- start slider -->*/
 a {
 	text-decoration: none !important;
 }
@@ -82,73 +82,166 @@ a {
 /*end slider */
 
 
-/*start blog*/
-
-.not-over {
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
+/*start shop item*/
+.bottom-nav {
+	border-bottom: 0px !important;
 }
-.article-1 .img-fluid {
-	width: 100%;
+.bottom-nav > .nav-link {
+	border: 0px !important;
 }
-
-.article-1-search {
-	font-size: 200%;
-	top: 50%;
-	left: 50%;
-	color: white;
+.review-pro span:nth-child(even) {
+	cursor: pointer !important;
 }
-.article-1 .img-fluid:hover {
-	opacity: 0.8;
-	transform: scale(1.2);
-}
-.article-1 .img-fluid:hover i {
-	display: block;
-}
-.date {
-	width: 100px;
-	height: 100px;
-	background-color: rgb(41, 171, 226);
-	bottom: 0px;
-	right: 0px;
-}
-.day {
-	font-size: 200%;
-}
-.article-1 {
-	border-bottom: 1px solid #eee;
-}
-.article-1:last-child {
-  border-bottom: 0;
-  margin-bottom: 0px !important;
-}
-
-.content-link {
-	color: #343a40;
-}
-.content-link:hover {
+.review-pro span:nth-child(even):hover {
 	color: rgb(41, 171, 226) !important;
 }
-.category-link {
-	color: rgb(41, 171, 226);
-	font-size: 80%;
+.start-pro i {
+	color: rgb(255, 204, 0);
 }
-.category-link:hover {
+
+/*start product counter*/
+.product-count {
+	border: 1px solid rgba(0,0,0,.125);
+}
+.product-count:hover {
+	border-color: rgb(41, 171, 226);
+}
+.product-count a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+.button-count {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: rgb(53, 53, 74);
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 190%;
+}
+.button-count:hover {
+	color: rgb(41, 171, 226);
+}
+.button-count:focus {
+	outline: 0px !important;
+}
+.button-count:active {
+  background-color: transparent;
+}
+.number-product {
+  display: inline-block;
+  width: 46px;
+  font-size: 135%;
+  text-align: center;
+  border-width: 0px !important;
+  outline: none;
+}
+:disabled {
+  background-color: transparent;
+}
+
+/*end product counter*/
+.btn-view-buy a {
+	border-radius: 0px !important;
+	font-size: 90%;
+}
+.second {
+	background-color: rgb(41, 171, 226);
+	color: white;
+}
+.second:hover {
+	background-color: rgb(53, 53, 74);
+}
+.categories {
+	cursor: pointer;
+}
+.categories:hover {
+	color: rgb(41, 171, 226) !important;
+}
+.tab-head {
+	border-bottom: 1px solid #666666 !important;
+}
+.tab-head .nav-link{
+	border: 0px !important;
+	border-bottom: 3px solid transparent;
+	font-weight: bold;
+}
+.tab-head .nav-link:hover {
+	color: rgb(41, 171, 226)!important;
+}
+.tab-head .nav-link.active {
+	border-bottom: 3px solid rgb(41, 171, 226) !important;
+	color: black;
+}
+.content-cmt, .icon > i {
+	background-color: rgb(247, 247, 247);
+	border-radius: 10px;
+}
+.info-pro:hover {
+	background-color: rgb(247, 247, 247);
+}
+/*product start*/
+.my-card-product1 {
+	border: 0px !important;
+}
+.my-card-product1:hover {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.my-card-product {
+	border: 0px !important;
+}
+.my-card-product  .my-img-product:hover {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.name-price .name {
 	color: grey;
 }
-.bt-article-1 span {
+.name-price .name:hover {
 	color: rgb(41, 171, 226);
 }
-.bt-article-1 .btn-outline-info {
-	border-radius: 0;
+.name-price .price-by-dolar {
+	font-size: 150%;
+	font-weight: bold;
 }
-.bt-article-1 .btn-outline-info:hover {
+.type-pro {
+	cursor: pointer;
+}
+.type-pro:hover {
+	color: rgb(41, 171, 226) !important;
+}
+.btn-view-buy a {
+	border-radius: 0px !important;
+	font-size: 90%;
+}
+.btn-view-buy .first:hover {
 	background-color: transparent;
 	color: black;
 	border-color: black;
 }
-/*end blog*/
+.btn-view-buy .second {
+	background-color: rgb(41, 171, 226);
+	color: white;
+}
+.btn-view-buy .second:hover {
+	background-color: rgb(53, 53, 74);
+}
+.trending a {
+	border-radius: 5px;
+}
+
+.trending a:hover {
+
+}
+/*product end*/
+
+/*end shop item*/
 
 /*star right bar*/
 .list-group .our-ser {
@@ -206,6 +299,10 @@ a {
 .contact-with-us {
 	background-color: rgb(247, 247, 247);
 }
+.manufacturer >.list-group-item {
+	border: 0px !important;
+	font-size: 90% !important;
+} 
 /*end right bar*/
 
 /*start footer*/

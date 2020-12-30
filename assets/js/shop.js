@@ -11,7 +11,7 @@ Vue.component('new-product', {
 				  <p class="card-text text-muted type-pro">{{obj.type}}</p>
 				  <div class="view-buy d-flex justify-content-end">
 				    <div class="btn-view-buy mr-2">
-				      <a href="#" class="first btn btn-outline-info" role="button" aria-pressed="true">VIEW</a>
+				      <a href="shop-item.html" class="first btn btn-outline-info" role="button" aria-pressed="true">VIEW</a>
 				    </div>
 				    <div class="btn-view-buy">
 				      <a href="#" class="second btn btn-outline-info" role="button" aria-pressed="true">ADD TO CART</a>

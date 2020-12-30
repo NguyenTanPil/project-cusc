@@ -377,4 +377,9 @@
 .list-contact > a:hover {
 	color: rgb(41, 171, 226);
 }
+@media (max-width: 767.98px) {
+	.footer  div{
+		text-align: center !important;
+	}
+}
 /*end footer*/

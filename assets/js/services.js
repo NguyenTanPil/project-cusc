@@ -2,12 +2,12 @@ Vue.component('new-product', {
 	props: ['obj'],
 	template: `
     <div class="card my-card-product mx-sm-auto" data-aos="zoom-in-up" data-aos-duration="1000">
-      <a href="#"><img class="card-img-top my-img-product" :src="obj.img" alt="Card image cap"></a>
+      <a href="read-more.html"><img class="card-img-top my-img-product" :src="obj.img" alt="Card image cap"></a>
       <div class="card-body">
-        <h6 class="card-title"><a href="#">{{obj.title}}</a></h6>
+        <h6 class="card-title"><a href="read-more.html">{{obj.title}}</a></h6>
         <p class="card-text text-muted">{{obj.content}}</p>
         <div class="read-more-product d-flex justify-content-end">
-          <a href="#" class="btn btn-outline-info" role="button" aria-pressed="true">Read more</a>
+          <a href="read-more.html" class="btn btn-outline-info" role="button" aria-pressed="true">Read more</a>
         </div>
       </div>
     </div>

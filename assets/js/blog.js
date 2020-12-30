@@ -3,7 +3,7 @@ Vue.component('new-blog', {
 	template: `
     <div class="row article-1 pb-5 mb-5" data-aos="fade-up" data-aos-duration="1000">
       <div class="col-12 position-relative px-0 py-0 not-over">
-        <a href="#">
+        <a href="read-more.html">
           <i class="fa fa-search position-absolute article-1-search d-none" aria-hidden="true"></i>
           <img :src="obj.img" class="img-fluid" alt="Responsive image">
         </a>
@@ -16,11 +16,11 @@ Vue.component('new-blog', {
 
       <div class="col-12 pt-5">
         <h3>
-          <a href="#" class="content-link">{{obj.title}}</a>
+          <a href="read-more.html" class="content-link">{{obj.title}}</a>
         </h3>
         <p class="text-muted mb-4" style="font-size: 90%;">Category: 
-          <a href="#" class="category-link">{{obj.c1}}</a>
-          <a href="#" class="category-link">{{obj.c2}}</a>
+          <a href="read-more.html" class="category-link">{{obj.c1}}</a>
+          <a href="read-more.html" class="category-link">{{obj.c2}}</a>
         </p>
         <p class="text-muted" style="font-size: 90%;">
             {{obj.content}}
