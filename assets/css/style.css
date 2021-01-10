@@ -1,4 +1,4 @@
-
+ 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 	.my-right-top-header {
@@ -174,7 +174,18 @@
 		left: initial ;
 	}
 }
-
+/*start loader */
+.loader {
+	position: fixed;
+	z-index: 999999;
+	background: rgb(23, 21, 25);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*end loader*/
 .header a, .header {
 	color: white !important;
 }

@@ -1,6 +1,10 @@
 // start price
 // Requires jQuery
-
+// loader 
+window.onload = function() {
+  document.querySelector('.loader').style.display = 'none';
+}
+// loader
 // Initialize slider:
 $(document).ready(function() {
   $('.noUi-handle').on('click', function() {

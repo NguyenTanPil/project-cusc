@@ -28,3 +28,8 @@ $('.button-count:last-child').click(function(){
 });
 
 // end product counter
+// loader 
+window.onload = function() {
+  document.querySelector('.loader').style.display = 'none';
+}
+// loader

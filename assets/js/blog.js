@@ -1,3 +1,8 @@
+// loader 
+window.onload = function() {
+  document.querySelector('.loader').style.display = 'none';
+}
+// loader
 Vue.component('new-blog', {
 	props: ['obj'],
 	template: `
