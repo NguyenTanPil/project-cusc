@@ -69,7 +69,7 @@
 	.my-price {
 		position: relative !important;
 		top: -100px !important; 
-		z-index: 1001 !important;
+		z-index: 1000 !important;
 	}
 	.top-section {
 		margin-top: initial;

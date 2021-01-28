@@ -9,10 +9,13 @@ window.addEventListener("scroll", () => {
 })
 // end scroll top 
 const toBottom = document.querySelector(".nav-header");
+const colorHeader = $(".nav-header .text-dark");
 window.addEventListener("scroll", () => {
 	if(window.pageYOffset > 100) {
 		toBottom.classList.add("active");
+		colorHeader.removeClass("text-dark");
 	} else {
 		toBottom.classList.remove("active");
+		colorHeader.addClass("text-dark")
 	}
 });

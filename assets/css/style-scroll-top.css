@@ -37,6 +37,12 @@ html {
 	background: #212529;
 	width: 100%;
 	padding: 0 13.5%;
-	z-index: 9999999;
+	z-index: 1001;
+}
+.theme-back {
+	z-index: 999 !important;
+}
+.color-header {
+	color: white !important;
 }
 /*end scroll bottom*/
