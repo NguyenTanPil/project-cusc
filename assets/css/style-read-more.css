@@ -1,4 +1,4 @@
-/*<!-- start slider -->*/
+ /*<!-- start slider -->*/
 a {
 	text-decoration: none !important;
 }
@@ -41,24 +41,6 @@ a {
 	align-items: center;
 }
 /*end loading*/
-/*start zoom*/
-.img-magnifier-container {
-	position: relative;
-}
-.img-magnifier-glass {
-  position: absolute;
-  border: 1px solid #000;
-  border-radius: 50%;
-  cursor: none;
-  /*Set the size of the magnifier glass:*/
-  width: 4em;
-  height: 4em;
-  opacity: 0;
-}
-.img-magnifier-glass:hover {
-	opacity: 1;
-}
-/*end zoom*/
 .header a, .header {
 	color: white !important;
 }
