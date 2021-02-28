@@ -1,7 +1,7 @@
 Vue.component('new-product', {
 	props: ['obj'],
 	template: `
-		<div class="card my-card-product mx-sm-auto px-2" data-aos="zoom-in-up" data-aos-duration="1000">
+		<div class="card my-card-product mx-sm-auto px-2 position-relative" data-aos="zoom-in-up" data-aos-duration="1000">
 				<a href="#"><img class="card-img-top my-img-product" :src="obj.img" alt="Card image cap"></a>
 				<div class="card-body">
 				  <div class="name-price d-flex justify-content-between">
@@ -18,6 +18,7 @@ Vue.component('new-product', {
 				    </div>
 				  </div>
 				</div>
+				<div class="countdown-timer"></div>
 		</div>
 	`
 })
@@ -91,3 +92,81 @@ window.onload = function() {
 	document.querySelector('.loader').style.display = 'none';
 }
 // loader
+class CountDown {
+  constructor(expiredDate, onRender, onComplete) {
+    this.setExpireDate(expiredDate);
+    this.onRender = onRender;
+    this.onComplete = onComplete;
+  }
+  // thoi gian con lai
+  setExpireDate(expiredDate) {
+    this.timeRemaining = expiredDate;
+    this.timeRemaining > 0 ? this.start() : this.complete();
+  }
+  complete() {
+    if(typeof this.onComplete == 'function') {
+      this.onComplete();
+    }
+  }
+  getTime() {
+    return {
+      hours: Math.floor(this.timeRemaining / 1000 / 60 / 60),
+      minutes: Math.floor(this.timeRemaining / 1000 / 60) % 60,
+      seconds: Math.floor(this.timeRemaining / 1000) % 60
+    };
+  }
+  update() {
+    if(typeof this.onRender == 'function') {
+      this.onRender(this.getTime());
+    }
+  }
+  start() {
+    this.update();
+    const intervaID = setInterval(() => {
+      this.timeRemaining -= 1000;
+      if(this.timeRemaining >= 0) {
+        this.update();
+      } else {
+        this.complete();
+        clearInterval(intervaID);
+      }
+    }, 1000);
+  }
+}
+const main = document.querySelectorAll('.countdown-timer');
+const days = [1000*60*60, 1000*60*60*2, 1000*60*60*3, 1000*60*60*4, 1000*60*60*5, 1000*60*60*6, 1000*60*60*7, 1000*60*60*8];
+for(let i = 0; i < main.length; i++) {
+	// select elements
+	const app = main[i];
+	const format = (t) => {
+	  return t < 10 ? '0' + t : t;
+	};
+	const render = (time) => {
+		app.innerHTML = `
+	  <div class="count-down">
+	  	<span>${format(time.hours)}:${format(time.minutes)}:${format(time.seconds)}</span>
+	  </div>
+	  `;
+	};
+	const showMessage = () => {
+	  app.forEach( (el) => {
+			el.innerHTML = `
+	  <div class="count-down">
+	  	<span>Out of stock</span>
+	  </div>
+	  `;
+		});
+	};
+	const day = 1000*60*60;
+	const complete = () => {
+	  showMessage();
+	  setTimeout(() => {
+	    countdownTimer.setExpireDate(days[i]);
+	  }, 1000 * 60);
+	};
+	const countdownTimer = new CountDown(
+	    days[i],
+	    render,
+	    complete
+	);
+}

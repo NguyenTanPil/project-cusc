@@ -145,6 +145,17 @@ a {
 .btn-view-buy .second:hover {
 	background-color: rgb(53, 53, 74);
 }
+.countdown-timer {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	background: #dc3545;
+	padding: .3rem 0.5rem;
+	border-radius: 5px;
+}
+.countdown-timer span {
+	color: white;
+}
 /*end shop*/
 
 /*star right bar*/

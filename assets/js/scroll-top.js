@@ -8,7 +8,7 @@ window.addEventListener("scroll", () => {
   } 
 })
 // end scroll top 
-const toBottom = document.querySelector(".nav-header");
+const toBottom = document.querySelector(".row .col .navbar");
 const colorHeader = $(".nav-header .text-dark");
 window.addEventListener("scroll", () => {
 	if(window.pageYOffset > 100) {
